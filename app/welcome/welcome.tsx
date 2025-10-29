@@ -12,8 +12,8 @@ export function Welcome() {
 
   
   return (
-    <main className="flex flex-col items-center justify-center pt-16 pb-4 min-h-svh">
-      <h1>Firebase</h1>
+    <main className="min-h-svh flex flex-col justify-center items-center ">
+      <h1 className="font-extrabold text-4xl text-center text-yellow-500 mb-20">Firebase</h1>
       {/* <ADataPut /> */}
       <BAuthentication />
     </main>

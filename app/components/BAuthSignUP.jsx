@@ -4,7 +4,7 @@ import app from "../firebase";
 
 const auth = getAuth(app);
 
-const BAuthTwo = () => {
+const BAuthSignUP = () => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
 
@@ -16,6 +16,7 @@ const BAuthTwo = () => {
 
   return (
     <div className="flex flex-col gap-4 justify-center items-start">
+      <h1 className="text-2xl">Sign UP</h1>
       <div>
         <label className="mr-2">Email</label>
         <input
@@ -48,4 +49,4 @@ const BAuthTwo = () => {
   );
 };
 
-export default BAuthTwo;
+export default BAuthSignUP;

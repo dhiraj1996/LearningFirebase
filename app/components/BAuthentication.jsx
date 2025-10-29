@@ -1,7 +1,8 @@
 import React from 'react'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import app from "../firebase";
-import BAuthTwo from './BAuthTwo';
+import BAuthSignUP from "./BAuthSignUP";
+import BAuthSignIN from './BAuthSignIN';
 
 
 
@@ -18,7 +19,8 @@ const BAuthentication = () => {
       <button className='border px-4 py-2 cursor-pointer' onClick={createUser}>Create User</button> */}
 
       {/* Second way where I have created input box and creating users  */}
-      <BAuthTwo />
+      {/* <BAuthSignUP /> */}
+      <BAuthSignIN />
     </>
   );
 }
