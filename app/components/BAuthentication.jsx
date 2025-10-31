@@ -3,6 +3,7 @@ import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
 import app from "../firebase";
 import BAuthSignUP from "./BAuthSignUP";
 import BAuthSignIN from './BAuthSignIN';
+import BSignOut from './BSignOut';
 
 
 
@@ -20,7 +21,8 @@ const BAuthentication = () => {
 
       {/* Second way where I have created input box and creating users  */}
       {/* <BAuthSignUP /> */}
-      <BAuthSignIN />
+      {/* <BAuthSignIN /> */}
+      <BSignOut />
     </>
   );
 }
